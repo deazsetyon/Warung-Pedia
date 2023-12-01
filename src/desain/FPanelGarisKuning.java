@@ -23,7 +23,7 @@ import javax.swing.SwingConstants;
  *
  * @author deazs
  */
-public class FPanelProduct extends JPanel{
+public class FPanelGarisKuning extends JPanel{
     private int roundTopLeft = 0;
     private int roundTopRight = 0;
     private int roundBottomLeft = 0;
@@ -65,13 +65,8 @@ public class FPanelProduct extends JPanel{
 //        repaint();
     }
 
-    public FPanelProduct() {
+    public FPanelGarisKuning() {
         setOpaque(false);
-      
-        // Mengatur ukuran panel menjadi 198x232
-        setPreferredSize(new Dimension(198,232));
-        
-        
     }
 
     @Override

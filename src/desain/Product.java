@@ -111,31 +111,8 @@ public class Product extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         fPanel5 = new desain.FPanel();
         jLabel1 = new javax.swing.JLabel();
-        fPanelProduct1 = new desain.FPanelProduct();
         labelNamaProduct = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        fPanelProduct2 = new desain.FPanelProduct();
-        labelHarga = new javax.swing.JLabel();
-        labelStok = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
-        panelPlastik = new desain.FPanelProduct();
-        labelPlastik = new javax.swing.JLabel();
-        panelKardus = new desain.FPanelProduct();
-        labelKardus = new javax.swing.JLabel();
-        panelKayu = new desain.FPanelProduct();
-        labelKayu = new javax.swing.JLabel();
-        jLabel15 = new javax.swing.JLabel();
-        labelTotalHarga = new javax.swing.JLabel();
-        jLabel17 = new javax.swing.JLabel();
-        fPanel6 = new desain.FPanel();
-        fPanel8 = new desain.FPanel();
-        labelTambah = new javax.swing.JLabel();
-        fPanel9 = new desain.FPanel();
-        labelKurang = new javax.swing.JLabel();
-        labelJumlah = new javax.swing.JLabel();
-        fPanel10 = new desain.FPanel();
-        labelBeli = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
         fPanel1 = new desain.FPanel();
         labelToko = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
@@ -148,6 +125,28 @@ public class Product extends javax.swing.JFrame {
         labelFotoSeller = new desain.ImageAvatar();
         labelFoto = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
+        fPanelGarisKuning4 = new desain.FPanelGarisKuning();
+        labelHarga = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        labelStok = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        fPanel6 = new desain.FPanel();
+        fPanel8 = new desain.FPanel();
+        labelTambah = new javax.swing.JLabel();
+        fPanel9 = new desain.FPanel();
+        labelKurang = new javax.swing.JLabel();
+        labelJumlah = new javax.swing.JLabel();
+        panelPlastik = new desain.FPanelGarisKuning();
+        labelPlastik = new javax.swing.JLabel();
+        panelKardus = new desain.FPanelGarisKuning();
+        labelKardus = new javax.swing.JLabel();
+        panelKayu = new desain.FPanelGarisKuning();
+        labelKayu = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        labelTotalHarga = new javax.swing.JLabel();
+        fPanel10 = new desain.FPanel();
+        labelBeli = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -197,120 +196,74 @@ public class Product extends javax.swing.JFrame {
             .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 34, Short.MAX_VALUE)
         );
 
-        javax.swing.GroupLayout fPanelProduct1Layout = new javax.swing.GroupLayout(fPanelProduct1);
-        fPanelProduct1.setLayout(fPanelProduct1Layout);
-        fPanelProduct1Layout.setHorizontalGroup(
-            fPanelProduct1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 372, Short.MAX_VALUE)
-        );
-        fPanelProduct1Layout.setVerticalGroup(
-            fPanelProduct1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-
         labelNamaProduct.setFont(new java.awt.Font("Segoe UI", 1, 22)); // NOI18N
         labelNamaProduct.setText("SkyCorp's CharmBar");
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel3.setText("Deskripsi");
 
-        fPanelProduct2.setBackground(new java.awt.Color(255, 255, 255));
+        fPanel1.setBackground(new java.awt.Color(251, 206, 49));
+        fPanel1.setPreferredSize(new java.awt.Dimension(3, 240));
+
+        javax.swing.GroupLayout fPanel1Layout = new javax.swing.GroupLayout(fPanel1);
+        fPanel1.setLayout(fPanel1Layout);
+        fPanel1Layout.setHorizontalGroup(
+            fPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 3, Short.MAX_VALUE)
+        );
+        fPanel1Layout.setVerticalGroup(
+            fPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 231, Short.MAX_VALUE)
+        );
+
+        labelToko.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        labelToko.setText("Warung Abah");
+
+        jLabel6.setText("Bandung");
+
+        fPanel2.setBackground(new java.awt.Color(251, 206, 49));
+        fPanel2.setPreferredSize(new java.awt.Dimension(350, 3));
+
+        javax.swing.GroupLayout fPanel2Layout = new javax.swing.GroupLayout(fPanel2);
+        fPanel2.setLayout(fPanel2Layout);
+        fPanel2Layout.setHorizontalGroup(
+            fPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 350, Short.MAX_VALUE)
+        );
+        fPanel2Layout.setVerticalGroup(
+            fPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 3, Short.MAX_VALUE)
+        );
+
+        labelHarga2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        labelHarga2.setText("Rp. 50.000,00");
+
+        labelStok2.setText("1203");
+
+        jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel9.setText("Kategori :");
+
+        labelKategori.setText("Makanan dan Minuman");
+
+        labelDeskripsi.setText("");
+
+        labelFotoSeller.setImage(new javax.swing.ImageIcon(getClass().getResource("/assets/user2.jpeg"))); // NOI18N
+
+        labelFoto.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelFoto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/produk1.jpg"))); // NOI18N
+
+        jLabel12.setText("Stok :");
+
+        fPanelGarisKuning4.setBackground(new java.awt.Color(255, 255, 255));
 
         labelHarga.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         labelHarga.setText("Rp. 50.000,00");
 
+        jLabel13.setText("Stok : ");
+
         labelStok.setText("1203");
 
         jLabel14.setText("Pilih Kemasan");
-
-        panelPlastik.setBackground(new java.awt.Color(255, 255, 255));
-        panelPlastik.setRoundBottomLeft(10);
-        panelPlastik.setRoundBottomRight(10);
-        panelPlastik.setRoundTopLeft(10);
-        panelPlastik.setRoundTopRight(10);
-
-        labelPlastik.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        labelPlastik.setText("Plastik");
-        labelPlastik.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                labelPlastikMouseClicked(evt);
-            }
-        });
-
-        javax.swing.GroupLayout panelPlastikLayout = new javax.swing.GroupLayout(panelPlastik);
-        panelPlastik.setLayout(panelPlastikLayout);
-        panelPlastikLayout.setHorizontalGroup(
-            panelPlastikLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelPlastikLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(labelPlastik, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-        panelPlastikLayout.setVerticalGroup(
-            panelPlastikLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(labelPlastik, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-
-        panelKardus.setBackground(new java.awt.Color(255, 255, 255));
-        panelKardus.setRoundBottomLeft(10);
-        panelKardus.setRoundBottomRight(10);
-        panelKardus.setRoundTopLeft(10);
-        panelKardus.setRoundTopRight(10);
-
-        labelKardus.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        labelKardus.setText("Kardus");
-        labelKardus.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                labelKardusMouseClicked(evt);
-            }
-        });
-
-        javax.swing.GroupLayout panelKardusLayout = new javax.swing.GroupLayout(panelKardus);
-        panelKardus.setLayout(panelKardusLayout);
-        panelKardusLayout.setHorizontalGroup(
-            panelKardusLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelKardusLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(labelKardus, javax.swing.GroupLayout.DEFAULT_SIZE, 63, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-        panelKardusLayout.setVerticalGroup(
-            panelKardusLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(labelKardus, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-
-        panelKayu.setBackground(new java.awt.Color(255, 255, 255));
-        panelKayu.setRoundBottomLeft(10);
-        panelKayu.setRoundBottomRight(10);
-        panelKayu.setRoundTopLeft(10);
-        panelKayu.setRoundTopRight(10);
-
-        labelKayu.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        labelKayu.setText("Kayu");
-        labelKayu.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                labelKayuMouseClicked(evt);
-            }
-        });
-
-        javax.swing.GroupLayout panelKayuLayout = new javax.swing.GroupLayout(panelKayu);
-        panelKayu.setLayout(panelKayuLayout);
-        panelKayuLayout.setHorizontalGroup(
-            panelKayuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelKayuLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(labelKayu, javax.swing.GroupLayout.DEFAULT_SIZE, 61, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-        panelKayuLayout.setVerticalGroup(
-            panelKayuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(labelKayu, javax.swing.GroupLayout.DEFAULT_SIZE, 23, Short.MAX_VALUE)
-        );
-
-        jLabel15.setText("Total Harga");
-
-        labelTotalHarga.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        labelTotalHarga.setText("Rp. 0");
 
         jLabel17.setText("Jumlah Beli");
 
@@ -403,6 +356,89 @@ public class Product extends javax.swing.JFrame {
                     .addComponent(labelJumlah, javax.swing.GroupLayout.DEFAULT_SIZE, 21, Short.MAX_VALUE)))
         );
 
+        panelPlastik.setBackground(new java.awt.Color(255, 255, 255));
+        panelPlastik.setPreferredSize(new java.awt.Dimension(72, 22));
+
+        labelPlastik.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelPlastik.setText("Plastik");
+        labelPlastik.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                labelPlastikMouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout panelPlastikLayout = new javax.swing.GroupLayout(panelPlastik);
+        panelPlastik.setLayout(panelPlastikLayout);
+        panelPlastikLayout.setHorizontalGroup(
+            panelPlastikLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelPlastikLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(labelPlastik, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        panelPlastikLayout.setVerticalGroup(
+            panelPlastikLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(labelPlastik, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
+        panelKardus.setBackground(new java.awt.Color(255, 255, 255));
+        panelKardus.setPreferredSize(new java.awt.Dimension(72, 22));
+
+        labelKardus.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelKardus.setText("Kardus");
+        labelKardus.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                labelKardusMouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout panelKardusLayout = new javax.swing.GroupLayout(panelKardus);
+        panelKardus.setLayout(panelKardusLayout);
+        panelKardusLayout.setHorizontalGroup(
+            panelKardusLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelKardusLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(labelKardus, javax.swing.GroupLayout.DEFAULT_SIZE, 60, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        panelKardusLayout.setVerticalGroup(
+            panelKardusLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(labelKardus, javax.swing.GroupLayout.DEFAULT_SIZE, 22, Short.MAX_VALUE)
+        );
+
+        panelKayu.setBackground(new java.awt.Color(255, 255, 255));
+        panelKayu.setPreferredSize(new java.awt.Dimension(72, 22));
+
+        labelKayu.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelKayu.setText("Kayu");
+        labelKayu.setPreferredSize(new java.awt.Dimension(72, 22));
+        labelKayu.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                labelKayuMouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout panelKayuLayout = new javax.swing.GroupLayout(panelKayu);
+        panelKayu.setLayout(panelKayuLayout);
+        panelKayuLayout.setHorizontalGroup(
+            panelKayuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelKayuLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(labelKayu, javax.swing.GroupLayout.DEFAULT_SIZE, 60, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        panelKayuLayout.setVerticalGroup(
+            panelKayuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelKayuLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(labelKayu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        jLabel15.setText("Total Harga");
+
+        labelTotalHarga.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        labelTotalHarga.setText("Rp. 0");
+
         fPanel10.setBackground(new java.awt.Color(251, 206, 49));
         fPanel10.setRoundBottomLeft(10);
         fPanel10.setRoundBottomRight(10);
@@ -423,174 +459,132 @@ public class Product extends javax.swing.JFrame {
         fPanel10.setLayout(fPanel10Layout);
         fPanel10Layout.setHorizontalGroup(
             fPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(labelBeli, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(fPanel10Layout.createSequentialGroup()
+                .addComponent(labelBeli, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 1, Short.MAX_VALUE))
         );
         fPanel10Layout.setVerticalGroup(
             fPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(labelBeli, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, fPanel10Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(labelBeli, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        jLabel13.setText("Stok : ");
-
-        javax.swing.GroupLayout fPanelProduct2Layout = new javax.swing.GroupLayout(fPanelProduct2);
-        fPanelProduct2.setLayout(fPanelProduct2Layout);
-        fPanelProduct2Layout.setHorizontalGroup(
-            fPanelProduct2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(fPanelProduct2Layout.createSequentialGroup()
-                .addGap(20, 20, 20)
-                .addGroup(fPanelProduct2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(labelHarga)
-                    .addComponent(labelTotalHarga)
-                    .addComponent(jLabel15)
-                    .addGroup(fPanelProduct2Layout.createSequentialGroup()
-                        .addComponent(panelPlastik, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(panelKardus, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(panelKayu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jLabel14)
-                    .addGroup(fPanelProduct2Layout.createSequentialGroup()
-                        .addComponent(jLabel13)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(labelStok)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 334, Short.MAX_VALUE)
-                .addGroup(fPanelProduct2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, fPanelProduct2Layout.createSequentialGroup()
+        javax.swing.GroupLayout fPanelGarisKuning4Layout = new javax.swing.GroupLayout(fPanelGarisKuning4);
+        fPanelGarisKuning4.setLayout(fPanelGarisKuning4Layout);
+        fPanelGarisKuning4Layout.setHorizontalGroup(
+            fPanelGarisKuning4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(fPanelGarisKuning4Layout.createSequentialGroup()
+                .addGap(17, 17, 17)
+                .addGroup(fPanelGarisKuning4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(fPanelGarisKuning4Layout.createSequentialGroup()
+                        .addComponent(labelHarga)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jLabel17)
-                        .addGap(57, 57, 57))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, fPanelProduct2Layout.createSequentialGroup()
-                        .addGroup(fPanelProduct2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(fPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(fPanel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(61, 61, 61))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, fPanelGarisKuning4Layout.createSequentialGroup()
+                        .addGroup(fPanelGarisKuning4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, fPanelGarisKuning4Layout.createSequentialGroup()
+                                .addComponent(jLabel13)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(labelStok)
+                                .addGap(498, 498, 498)
+                                .addComponent(fPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addGroup(fPanelGarisKuning4Layout.createSequentialGroup()
+                                .addGroup(fPanelGarisKuning4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addComponent(panelPlastik, javax.swing.GroupLayout.DEFAULT_SIZE, 80, Short.MAX_VALUE)
+                                    .addComponent(jLabel14, javax.swing.GroupLayout.DEFAULT_SIZE, 80, Short.MAX_VALUE))
+                                .addGap(18, 18, 18)
+                                .addComponent(panelKardus, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(panelKayu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, fPanelGarisKuning4Layout.createSequentialGroup()
+                                .addGroup(fPanelGarisKuning4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel15)
+                                    .addComponent(labelTotalHarga))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(fPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(15, 15, 15))))
         );
-        fPanelProduct2Layout.setVerticalGroup(
-            fPanelProduct2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(fPanelProduct2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(fPanelProduct2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(fPanelProduct2Layout.createSequentialGroup()
+        fPanelGarisKuning4Layout.setVerticalGroup(
+            fPanelGarisKuning4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(fPanelGarisKuning4Layout.createSequentialGroup()
+                .addGroup(fPanelGarisKuning4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(fPanelGarisKuning4Layout.createSequentialGroup()
+                        .addGap(14, 14, 14)
                         .addComponent(labelHarga)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(fPanelProduct2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(labelStok)
-                            .addComponent(jLabel13)))
-                    .addGroup(fPanelProduct2Layout.createSequentialGroup()
+                        .addGroup(fPanelGarisKuning4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel13)
+                            .addComponent(labelStok))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel14))
+                    .addGroup(fPanelGarisKuning4Layout.createSequentialGroup()
+                        .addContainerGap()
                         .addComponent(jLabel17)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(fPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(13, 13, 13)))
-                .addComponent(jLabel14)
+                        .addComponent(fPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(fPanelProduct2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(panelKayu, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(panelKardus, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(panelPlastik, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(18, 18, 18)
-                .addGroup(fPanelProduct2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(fPanelProduct2Layout.createSequentialGroup()
+                .addGroup(fPanelGarisKuning4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(fPanelGarisKuning4Layout.createSequentialGroup()
+                        .addGroup(fPanelGarisKuning4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(fPanelGarisKuning4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(panelKardus, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(panelPlastik, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(panelKayu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(22, 22, 22)
                         .addComponent(jLabel15)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(labelTotalHarga))
                     .addComponent(fPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(23, Short.MAX_VALUE))
+                .addContainerGap(16, Short.MAX_VALUE))
         );
-
-        fPanel1.setBackground(new java.awt.Color(251, 206, 49));
-        fPanel1.setPreferredSize(new java.awt.Dimension(3, 240));
-
-        javax.swing.GroupLayout fPanel1Layout = new javax.swing.GroupLayout(fPanel1);
-        fPanel1.setLayout(fPanel1Layout);
-        fPanel1Layout.setHorizontalGroup(
-            fPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 3, Short.MAX_VALUE)
-        );
-        fPanel1Layout.setVerticalGroup(
-            fPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 231, Short.MAX_VALUE)
-        );
-
-        labelToko.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        labelToko.setText("Warung Abah");
-
-        jLabel6.setText("Bandung");
-
-        fPanel2.setBackground(new java.awt.Color(251, 206, 49));
-        fPanel2.setPreferredSize(new java.awt.Dimension(350, 3));
-
-        javax.swing.GroupLayout fPanel2Layout = new javax.swing.GroupLayout(fPanel2);
-        fPanel2.setLayout(fPanel2Layout);
-        fPanel2Layout.setHorizontalGroup(
-            fPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 350, Short.MAX_VALUE)
-        );
-        fPanel2Layout.setVerticalGroup(
-            fPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 3, Short.MAX_VALUE)
-        );
-
-        labelHarga2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        labelHarga2.setText("Rp. 50.000,00");
-
-        labelStok2.setText("1203");
-
-        jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel9.setText("Kategori :");
-
-        labelKategori.setText("Makanan dan Minuman");
-
-        labelDeskripsi.setText("");
-
-        labelFotoSeller.setImage(new javax.swing.ImageIcon(getClass().getResource("/assets/user2.jpeg"))); // NOI18N
-
-        labelFoto.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        labelFoto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/produk1.jpg"))); // NOI18N
-
-        jLabel12.setText("Stok :");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addGap(0, 280, Short.MAX_VALUE)
-                .addComponent(fPanelProduct2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(614, 614, 614))
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(36, 36, 36)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(labelFoto, javax.swing.GroupLayout.PREFERRED_SIZE, 234, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(54, 54, 54)
+                        .addGap(36, 36, 36)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addComponent(labelFotoSeller, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(22, 22, 22)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(labelFoto, javax.swing.GroupLayout.PREFERRED_SIZE, 234, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(54, 54, 54)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(labelToko)
-                                    .addComponent(jLabel6))
-                                .addGap(267, 267, 267))
-                            .addComponent(labelNamaProduct)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(labelHarga2)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(fPanelProduct1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(fPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel12)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(labelStok2))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel9)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(labelKategori)))
-                        .addComponent(fPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(21, 21, 21)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel3)
-                            .addComponent(labelDeskripsi)))
-                    .addComponent(fPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                        .addComponent(labelFotoSeller, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(22, 22, 22)
+                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(labelToko)
+                                            .addComponent(jLabel6))
+                                        .addGap(267, 267, 267))
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(labelNamaProduct)
+                                            .addComponent(labelHarga2)
+                                            .addComponent(fPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                                .addComponent(jLabel12)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(labelStok2))
+                                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                                .addComponent(jLabel9)
+                                                .addGap(14, 14, 14)
+                                                .addComponent(labelKategori)))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
+                                .addComponent(fPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(21, 21, 21)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel3)
+                                    .addComponent(labelDeskripsi)))
+                            .addComponent(fPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(134, 134, 134)
+                        .addComponent(fPanelGarisKuning4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -601,11 +595,9 @@ public class Product extends javax.swing.JFrame {
                 .addComponent(fPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(19, 19, 19)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addComponent(labelFoto, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
-                            .addGap(14, 14, 14)
-                            .addComponent(fPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 231, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(14, 14, 14)
+                        .addComponent(fPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 231, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
@@ -627,35 +619,32 @@ public class Product extends javax.swing.JFrame {
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(labelFotoSeller, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                 .addGap(25, 25, 25)
-                                .addComponent(fPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(fPanelProduct1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(fPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel12)
                             .addComponent(labelStok2))
-                        .addGap(18, 18, 18)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel9)
-                            .addComponent(labelKategori))))
-                .addGap(18, 18, 18)
-                .addComponent(fPanelProduct2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(425, Short.MAX_VALUE))
+                            .addComponent(labelKategori)))
+                    .addComponent(labelFoto, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(40, 40, 40)
+                .addComponent(fPanelGarisKuning4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(546, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 1092, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addGap(0, 73, Short.MAX_VALUE))
         );
 
         pack();
@@ -910,8 +899,7 @@ public class Product extends javax.swing.JFrame {
     private desain.FPanel fPanel6;
     private desain.FPanel fPanel8;
     private desain.FPanel fPanel9;
-    private desain.FPanelProduct fPanelProduct1;
-    private desain.FPanelProduct fPanelProduct2;
+    private desain.FPanelGarisKuning fPanelGarisKuning4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
@@ -942,9 +930,9 @@ public class Product extends javax.swing.JFrame {
     private javax.swing.JLabel labelTambah;
     private javax.swing.JLabel labelToko;
     private javax.swing.JLabel labelTotalHarga;
-    private desain.FPanelProduct panelKardus;
-    private desain.FPanelProduct panelKayu;
-    private desain.FPanelProduct panelPlastik;
+    private desain.FPanelGarisKuning panelKardus;
+    private desain.FPanelGarisKuning panelKayu;
+    private desain.FPanelGarisKuning panelPlastik;
     // End of variables declaration//GEN-END:variables
 
     private Color Color(int i, int i0, int i1) {

@@ -5,9 +5,7 @@
 package desain;
 
 import java.awt.BasicStroke;
-import java.awt.BorderLayout;
 import java.awt.Color;
-import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.RenderingHints;
@@ -15,15 +13,13 @@ import java.awt.Shape;
 import java.awt.geom.Area;
 import java.awt.geom.Rectangle2D;
 import java.awt.geom.RoundRectangle2D;
-import javax.swing.JLabel;
 import javax.swing.JPanel;
-import javax.swing.SwingConstants;
 
 /**
  *
  * @author deazs
  */
-public class FPanelProduct extends JPanel{
+public class Test5 {
     private int roundTopLeft = 0;
     private int roundTopRight = 0;
     private int roundBottomLeft = 0;
@@ -35,7 +31,7 @@ public class FPanelProduct extends JPanel{
 
     public void setRoundTopLeft(int roundTopLeft) {
         this.roundTopLeft = roundTopLeft;
-//        repaint();
+        repaint();
     }
 
     public int getRoundTopRight() {
@@ -44,7 +40,7 @@ public class FPanelProduct extends JPanel{
 
     public void setRoundTopRight(int roundTopRight) {
         this.roundTopRight = roundTopRight;
-//        repaint();
+        repaint();
     }
 
     public int getRoundBottomLeft() {
@@ -53,7 +49,7 @@ public class FPanelProduct extends JPanel{
 
     public void setRoundBottomLeft(int roundBottomLeft) {
         this.roundBottomLeft = roundBottomLeft;
-//        repaint();
+        repaint();
     }
 
     public int getRoundBottomRight() {
@@ -62,16 +58,11 @@ public class FPanelProduct extends JPanel{
 
     public void setRoundBottomRight(int roundBottomRight) {
         this.roundBottomRight = roundBottomRight;
-//        repaint();
+        repaint();
     }
 
-    public FPanelProduct() {
+    public Test5() {
         setOpaque(false);
-      
-        // Mengatur ukuran panel menjadi 198x232
-        setPreferredSize(new Dimension(198,232));
-        
-        
     }
 
     @Override
@@ -152,6 +143,4 @@ public class FPanelProduct extends JPanel{
         area.add(new Area (new Rectangle2D.Double(0, 0, width, height-roundY/2)));
         return area;
     }
-
-    // Metode lainnya (sama dengan yang telah Anda berikan sebelumnya)
 }
