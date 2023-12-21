@@ -4,18 +4,26 @@
  */
 package desain;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author deazs
  */
-public class Test4 extends javax.swing.JPanel {
-
-    /**
-     * Creates new form Test4
-     */
-    public Test4() {
+public class Produk extends javax.swing.JPanel {
+    private Barang brg;
+    public Produk(String namaProduk,String kategori,String deskripsi,String foto,String toko,int harga,int stok) {
         initComponents();
+        this.brg=new Barang(namaProduk,kategori,deskripsi,foto,toko,harga,stok);
+        updateDisplay(this.brg);
     }
+    public void updateDisplay(Barang brg){
+        labelToko.setText(brg.getToko());
+        labelNamaProduct.setText(brg.getNama());
+        labelHarga.setText("Rp. "+String.valueOf(brg.getHarga()));
+        labelStok.setText(String.valueOf(brg.getStok()));
+    }
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -46,16 +54,16 @@ public class Test4 extends javax.swing.JPanel {
         labelFoto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/produk1.jpg"))); // NOI18N
 
         labelNamaProduct.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        labelNamaProduct.setText("Barang 1");
+        labelNamaProduct.setText("Barang1");
 
-        labelToko.setText("Warung Abah");
+        labelToko.setText("Udin");
 
-        labelTulisanStok.setText("Stok : ");
+        labelTulisanStok.setText("Stok :");
 
         labelHarga.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        labelHarga.setText("Rp. 50.000,00");
+        labelHarga.setText("Rp. 10.000,00");
 
-        labelStok.setText("100");
+        labelStok.setText("10");
 
         javax.swing.GroupLayout fPanelProduct2Layout = new javax.swing.GroupLayout(fPanelProduct2);
         fPanelProduct2.setLayout(fPanelProduct2Layout);
@@ -69,12 +77,11 @@ public class Test4 extends javax.swing.JPanel {
                         .addGap(6, 6, 6)
                         .addGroup(fPanelProduct2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(labelNamaProduct)
-                            .addGroup(fPanelProduct2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, fPanelProduct2Layout.createSequentialGroup()
-                                    .addComponent(labelTulisanStok)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(labelStok))
-                                .addComponent(labelToko)))
+                            .addGroup(fPanelProduct2Layout.createSequentialGroup()
+                                .addComponent(labelTulisanStok)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(labelStok))
+                            .addComponent(labelToko))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, fPanelProduct2Layout.createSequentialGroup()
@@ -97,27 +104,27 @@ public class Test4 extends javax.swing.JPanel {
                     .addComponent(labelStok))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(labelHarga)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addGap(0, 13, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(fPanelProduct2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(fPanelProduct2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 6, Short.MAX_VALUE))
         );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(fPanelProduct2, javax.swing.GroupLayout.PREFERRED_SIZE, 245, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 36, Short.MAX_VALUE))
+        );
     }// </editor-fold>//GEN-END:initComponents
 
     private void fPanelProduct2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_fPanelProduct2MouseClicked
-
-        Product p = new Product();
-        p.setVisible(true);
+        JOptionPane.showMessageDialog(null, "Anda Klik "+labelNamaProduct.getText());
     }//GEN-LAST:event_fPanelProduct2MouseClicked
 
 

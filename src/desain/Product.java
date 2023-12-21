@@ -50,6 +50,8 @@ public class Product extends javax.swing.JFrame {
     
     String pertama,kedua,ketiga,hasilFile;
     String fotoSeller,awal,tengah,akhir,hasilFotoSeller;
+    
+    public static String jumlah,totalHarga;
 
     private int status;
     public Product() {
@@ -358,6 +360,10 @@ public class Product extends javax.swing.JFrame {
 
         panelPlastik.setBackground(new java.awt.Color(255, 255, 255));
         panelPlastik.setPreferredSize(new java.awt.Dimension(72, 22));
+        panelPlastik.setRoundBottomLeft(10);
+        panelPlastik.setRoundBottomRight(10);
+        panelPlastik.setRoundTopLeft(10);
+        panelPlastik.setRoundTopRight(10);
 
         labelPlastik.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         labelPlastik.setText("Plastik");
@@ -371,18 +377,19 @@ public class Product extends javax.swing.JFrame {
         panelPlastik.setLayout(panelPlastikLayout);
         panelPlastikLayout.setHorizontalGroup(
             panelPlastikLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelPlastikLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(labelPlastik, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(labelPlastik, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 80, Short.MAX_VALUE)
         );
         panelPlastikLayout.setVerticalGroup(
             panelPlastikLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(labelPlastik, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(labelPlastik, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         panelKardus.setBackground(new java.awt.Color(255, 255, 255));
         panelKardus.setPreferredSize(new java.awt.Dimension(72, 22));
+        panelKardus.setRoundBottomLeft(10);
+        panelKardus.setRoundBottomRight(10);
+        panelKardus.setRoundTopLeft(10);
+        panelKardus.setRoundTopRight(10);
 
         labelKardus.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         labelKardus.setText("Kardus");
@@ -396,10 +403,7 @@ public class Product extends javax.swing.JFrame {
         panelKardus.setLayout(panelKardusLayout);
         panelKardusLayout.setHorizontalGroup(
             panelKardusLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelKardusLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(labelKardus, javax.swing.GroupLayout.DEFAULT_SIZE, 60, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(labelKardus, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 72, Short.MAX_VALUE)
         );
         panelKardusLayout.setVerticalGroup(
             panelKardusLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -408,6 +412,10 @@ public class Product extends javax.swing.JFrame {
 
         panelKayu.setBackground(new java.awt.Color(255, 255, 255));
         panelKayu.setPreferredSize(new java.awt.Dimension(72, 22));
+        panelKayu.setRoundBottomLeft(10);
+        panelKayu.setRoundBottomRight(10);
+        panelKayu.setRoundTopLeft(10);
+        panelKayu.setRoundTopRight(10);
 
         labelKayu.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         labelKayu.setText("Kayu");
@@ -422,10 +430,7 @@ public class Product extends javax.swing.JFrame {
         panelKayu.setLayout(panelKayuLayout);
         panelKayuLayout.setHorizontalGroup(
             panelKayuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelKayuLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(labelKayu, javax.swing.GroupLayout.DEFAULT_SIZE, 60, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(labelKayu, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         panelKayuLayout.setVerticalGroup(
             panelKayuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -478,11 +483,21 @@ public class Product extends javax.swing.JFrame {
                 .addGap(17, 17, 17)
                 .addGroup(fPanelGarisKuning4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(fPanelGarisKuning4Layout.createSequentialGroup()
+                        .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(fPanelGarisKuning4Layout.createSequentialGroup()
                         .addComponent(labelHarga)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jLabel17)
                         .addGap(61, 61, 61))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, fPanelGarisKuning4Layout.createSequentialGroup()
+                    .addGroup(fPanelGarisKuning4Layout.createSequentialGroup()
+                        .addComponent(panelPlastik, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(panelKardus, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(panelKayu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(fPanelGarisKuning4Layout.createSequentialGroup()
                         .addGroup(fPanelGarisKuning4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, fPanelGarisKuning4Layout.createSequentialGroup()
                                 .addComponent(jLabel13)
@@ -490,15 +505,6 @@ public class Product extends javax.swing.JFrame {
                                 .addComponent(labelStok)
                                 .addGap(498, 498, 498)
                                 .addComponent(fPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                            .addGroup(fPanelGarisKuning4Layout.createSequentialGroup()
-                                .addGroup(fPanelGarisKuning4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addComponent(panelPlastik, javax.swing.GroupLayout.DEFAULT_SIZE, 80, Short.MAX_VALUE)
-                                    .addComponent(jLabel14, javax.swing.GroupLayout.DEFAULT_SIZE, 80, Short.MAX_VALUE))
-                                .addGap(18, 18, 18)
-                                .addComponent(panelKardus, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(panelKayu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, fPanelGarisKuning4Layout.createSequentialGroup()
                                 .addGroup(fPanelGarisKuning4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel15)
@@ -517,14 +523,14 @@ public class Product extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(fPanelGarisKuning4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel13)
-                            .addComponent(labelStok))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel14))
+                            .addComponent(labelStok)))
                     .addGroup(fPanelGarisKuning4Layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jLabel17)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(fPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel14)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(fPanelGarisKuning4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(fPanelGarisKuning4Layout.createSequentialGroup()
@@ -532,7 +538,7 @@ public class Product extends javax.swing.JFrame {
                             .addGroup(fPanelGarisKuning4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                 .addComponent(panelKardus, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(panelPlastik, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                            .addComponent(panelKayu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(panelKayu, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(22, 22, 22)
                         .addComponent(jLabel15)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -673,8 +679,9 @@ public class Product extends javax.swing.JFrame {
     }//GEN-LAST:event_labelKayuMouseClicked
 
     private void labelTambahMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelTambahMouseClicked
+        
         String jumlah = labelJumlah.getText();
-        String harga = labelHarga.getText();
+        String harga  = labelHarga.getText();
         String total = labelTotalHarga.getText();
         if (Integer.parseInt(jumlah) == stok){
             labelTotalHarga.setText(total);
@@ -771,9 +778,9 @@ public class Product extends javax.swing.JFrame {
     }//GEN-LAST:event_labelKurangMouseClicked
 
     private void labelBeliMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelBeliMouseClicked
-        String jumlah = labelJumlah.getText();
+        jumlah = labelJumlah.getText();
         String stok = labelStok.getText();
-        String totalHarga = labelTotalHarga.getText();
+        totalHarga = labelTotalHarga.getText();
         int jumlahBeli,jumlahStok;
         
         if (jumlah.equals("0")){
@@ -794,7 +801,7 @@ public class Product extends javax.swing.JFrame {
             }
             if (saldo - amountIntHarga >= 0 ){
                 int saldoSekarang = saldo - amountIntHarga;
-                JOptionPane.showMessageDialog(null, "Pembelian berhasil");
+//                JOptionPane.showMessageDialog(null, "Pembelian berhasil");
                 labelJumlah.setText("0");
                 jumlahBeli = Integer.parseInt(jumlah);
             
@@ -837,22 +844,38 @@ public class Product extends javax.swing.JFrame {
                 
                 //UPDATE SALDO SELLER
                 try {
+                    int saldoSeller = 0;
                     st = cn.createStatement();
+                    String sql = "SELECT * FROM  seller WHERE toko = '"+toko+"'";
+                    rs = st.executeQuery(sql);
+                    if (rs.next()){
+                        saldoSeller = rs.getInt("saldo");
+                    }
+                    saldoSeller+=amountIntHarga;
+                    try {
+                        st = cn.createStatement();
 
-                    String sql = "UPDATE seller SET saldo = " + amountIntHarga + " WHERE toko = '" + toko + "'";
-                    int rs = st.executeUpdate(sql);
+                        String sql2 = "UPDATE seller SET saldo = " + saldoSeller + " WHERE toko = '" + toko + "'";
+                        int rs = st.executeUpdate(sql2);
+                    } catch (Exception e) {
+                    }
+                    
                 } catch (Exception e) {
                 }
-            
+                
+                DetailPembelian dp = new DetailPembelian();
+                dp.setVisible(true);
             }else{
-            JOptionPane.showMessageDialog(null, "Saldo Tidak cukup");                
+                JOptionPane.showMessageDialog(null, "Saldo Tidak cukup"); 
+                this.dispose();
+                HomePage hp = new HomePage();   
+                hp.setVisible(true);
             }
             
             
+            
 
-            this.dispose();
-            HomePage hp = new HomePage();   
-            hp.setVisible(true);
+
         }
     }//GEN-LAST:event_labelBeliMouseClicked
 

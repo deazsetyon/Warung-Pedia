@@ -8,6 +8,9 @@
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
     <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
   </SyntheticProperties>
+  <Events>
+    <EventHandler event="windowGainedFocus" listener="java.awt.event.WindowFocusListener" parameters="java.awt.event.WindowEvent" handler="formWindowGainedFocus"/>
+  </Events>
   <AuxValues>
     <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
     <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
@@ -58,45 +61,48 @@
               <Component id="jPanel3" alignment="0" max="32767" attributes="0"/>
               <Group type="102" alignment="0" attributes="0">
                   <Group type="103" groupAlignment="1" attributes="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <EmptySpace min="-2" pref="69" max="-2" attributes="0"/>
-                                      <Component id="labelFoto" min="-2" pref="222" max="-2" attributes="0"/>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <EmptySpace min="-2" pref="69" max="-2" attributes="0"/>
+                                          <Component id="labelFoto" min="-2" pref="222" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <EmptySpace min="-2" pref="80" max="-2" attributes="0"/>
+                                          <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
+                                      </Group>
                                   </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <EmptySpace min="-2" pref="80" max="-2" attributes="0"/>
-                                      <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="229" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="txtNamaProduct" max="32767" attributes="0"/>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="txtHarga" min="-2" pref="157" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="txtStok" min="-2" pref="157" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Component id="jLabel6" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="txtKategori" alignment="0" pref="403" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
-                              <EmptySpace min="-2" pref="229" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="txtNamaProduct" max="32767" attributes="0"/>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="txtHarga" min="-2" pref="157" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="txtStok" min="-2" pref="157" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Component id="jLabel6" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="txtKategori" alignment="0" pref="403" max="32767" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="57" max="-2" attributes="0"/>
+                                  <Component id="fPanel5" min="-2" max="-2" attributes="0"/>
                               </Group>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="57" max="-2" attributes="0"/>
-                              <Component id="fPanel5" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <Group type="102" attributes="0">
                           <EmptySpace pref="80" max="32767" attributes="0"/>
                           <Group type="103" groupAlignment="1" attributes="0">
-                              <Component id="fPanelProduct3" alignment="1" min="-2" pref="843" max="-2" attributes="0"/>
-                              <Component id="fPanel1" alignment="1" min="-2" max="-2" attributes="0"/>
+                              <Component id="fPanelProduct3" min="-2" pref="843" max="-2" attributes="0"/>
+                              <Component id="fPanel1" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -136,11 +142,11 @@
                           <Component id="txtKategori" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
-                  <Component id="fPanelProduct3" min="-2" pref="99" max="-2" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Component id="fPanelProduct3" min="-2" pref="77" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Component id="fPanel1" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="614" max="32767" attributes="0"/>
+                  <EmptySpace pref="652" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -229,6 +235,8 @@
             <Property name="text" type="java.lang.String" value="Nama Produk"/>
           </Properties>
           <Events>
+            <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="txtNamaProductFocusGained"/>
+            <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="txtNamaProductFocusLost"/>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtNamaProductActionPerformed"/>
           </Events>
         </Component>
@@ -240,6 +248,8 @@
             <Property name="text" type="java.lang.String" value="Harga Produk"/>
           </Properties>
           <Events>
+            <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="txtHargaFocusGained"/>
+            <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="txtHargaFocusLost"/>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtHargaActionPerformed"/>
           </Events>
         </Component>
@@ -251,6 +261,8 @@
             <Property name="text" type="java.lang.String" value="Stok"/>
           </Properties>
           <Events>
+            <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="txtStokFocusGained"/>
+            <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="txtStokFocusLost"/>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtStokActionPerformed"/>
           </Events>
         </Component>
@@ -286,6 +298,8 @@
             <Property name="text" type="java.lang.String" value="Masukkan Kategori Barang"/>
           </Properties>
           <Events>
+            <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="txtKategoriFocusGained"/>
+            <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="txtKategoriFocusLost"/>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtKategoriActionPerformed"/>
           </Events>
         </Component>
@@ -312,7 +326,7 @@
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="txtDeskripsi" alignment="0" pref="99" max="32767" attributes="0"/>
+                  <Component id="txtDeskripsi" min="-2" pref="77" max="-2" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>
@@ -325,6 +339,10 @@
                 <Property name="horizontalAlignment" type="int" value="2"/>
                 <Property name="text" type="java.lang.String" value="Masukkan deskripsi produk"/>
               </Properties>
+              <Events>
+                <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="txtDeskripsiFocusGained"/>
+                <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="txtDeskripsiFocusLost"/>
+              </Events>
             </Component>
           </SubComponents>
         </Container>
@@ -350,22 +368,26 @@
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="31" green="ce" red="fb" type="rgb"/>
             </Property>
+            <Property name="roundBottomLeft" type="int" value="10"/>
+            <Property name="roundBottomRight" type="int" value="10"/>
+            <Property name="roundTopLeft" type="int" value="10"/>
+            <Property name="roundTopRight" type="int" value="10"/>
           </Properties>
 
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jLabel8" alignment="0" pref="164" max="32767" attributes="0"/>
+                  <Component id="labelKonfirmasi" alignment="1" pref="142" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jLabel8" alignment="0" pref="33" max="32767" attributes="0"/>
+                  <Component id="labelKonfirmasi" alignment="1" pref="33" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JLabel" name="jLabel8">
+            <Component class="javax.swing.JLabel" name="labelKonfirmasi">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI" size="18" style="1"/>
@@ -374,7 +396,7 @@
                 <Property name="text" type="java.lang.String" value="Konfirmasi"/>
               </Properties>
               <Events>
-                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jLabel8MouseClicked"/>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="labelKonfirmasiMouseClicked"/>
               </Events>
             </Component>
           </SubComponents>

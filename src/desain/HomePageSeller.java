@@ -38,6 +38,9 @@ public class HomePageSeller extends javax.swing.JFrame {
     
     public static String namaProduct,fileName,pertama,kedua,ketiga,hasilFile,toko,deskripsi,kategori;
     public static int harga,stok;
+    
+    //Untuk ke UpdateProduct
+    public static String namaProductToUpdate;
 
     /**
      * Creates new form HomePageSeller
@@ -561,6 +564,11 @@ public class HomePageSeller extends javax.swing.JFrame {
     }//GEN-LAST:event_btnTarikSaldoMouseClicked
 
     private void fPanelProduct2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_fPanelProduct2MouseClicked
+        namaProductToUpdate = labelNamaProduct.getText();
+        
+         UpdateProduct up = new UpdateProduct();
+         up.setVisible(true);
+         this.dispose();
 
     }//GEN-LAST:event_fPanelProduct2MouseClicked
 

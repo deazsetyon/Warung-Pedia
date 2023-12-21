@@ -380,7 +380,7 @@ public class RegisterSeller extends javax.swing.JFrame {
             fileAkhir = new File(newpath+"////"+txtEmail.getText()+"."+ext);
 
             st = cn.createStatement();
-            if (txtEmail.getText().equals("") || txtNo.getText().equals("") || txtPassword.getText().equals("") || txtRePassword.getText().equals("") || txtNamaToko.getText().equals("")){
+            if (txtEmail.getText().equals("Email") || txtNo.getText().equals("No HP") || txtPassword.getText().equals("Password") || txtRePassword.getText().equals("Re-Password") || txtNamaToko.getText().equals("Nama Toko")){
                 JOptionPane.showMessageDialog(null, "Data tidak boleh kosong","Validasi Data",JOptionPane.ERROR_MESSAGE);
                 return;
             }else{

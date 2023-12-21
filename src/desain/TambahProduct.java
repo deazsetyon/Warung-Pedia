@@ -5,6 +5,8 @@
 package desain;
 
 import com.mysql.cj.xdevapi.PreparableStatement;
+import java.awt.Color;
+import java.awt.Font;
 import java.awt.Image;
 import java.io.File;
 import java.nio.file.Files;
@@ -15,6 +17,7 @@ import java.sql.Statement;
 import javax.swing.ImageIcon;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
+import javax.swing.JTextField;
 import javax.swing.filechooser.FileFilter;
  
 
@@ -33,9 +36,24 @@ public class TambahProduct extends javax.swing.JFrame {
     public TambahProduct() {
         initComponents();
         this.setExtendedState(JFrame.MAXIMIZED_BOTH);
-
+        addPlaceholderStyle(txtNamaProduct);
+        addPlaceholderStyle(txtHarga);
+        addPlaceholderStyle(txtStok);
+        addPlaceholderStyle(txtKategori);
+        addPlaceholderStyle(txtDeskripsi);
     }
-    
+    public void addPlaceholderStyle(JTextField textField){
+        Font font = textField.getFont();
+        font = font.deriveFont(Font.ITALIC);
+        textField.setFont(font);
+        textField.setForeground(Color.gray);
+    }
+    public void removePlaceholderStyle(JTextField textField){
+        Font font = textField.getFont();
+        font = font.deriveFont(Font.PLAIN);
+        textField.setFont(font);
+        textField.setForeground(Color.BLACK);
+    }
     class product extends TambahProduct{
         String nama="",kategori="",deskripsi="",foto="",toko="";
         String harga,stok;
@@ -47,7 +65,9 @@ public class TambahProduct extends javax.swing.JFrame {
             stok = txtStok.getText();
             toko = namaToko;
         }
+        
     }
+    
     
 
     /**
@@ -76,9 +96,16 @@ public class TambahProduct extends javax.swing.JFrame {
         txtDeskripsi = new desain.FtxtField();
         labelFoto = new javax.swing.JLabel();
         fPanel1 = new desain.FPanel();
-        jLabel8 = new javax.swing.JLabel();
+        labelKonfirmasi = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        addWindowFocusListener(new java.awt.event.WindowFocusListener() {
+            public void windowGainedFocus(java.awt.event.WindowEvent evt) {
+                formWindowGainedFocus(evt);
+            }
+            public void windowLostFocus(java.awt.event.WindowEvent evt) {
+            }
+        });
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setMaximumSize(new java.awt.Dimension(1110, 900));
@@ -129,6 +156,14 @@ public class TambahProduct extends javax.swing.JFrame {
         txtNamaProduct.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         txtNamaProduct.setForeground(new java.awt.Color(204, 204, 204));
         txtNamaProduct.setText("Nama Produk");
+        txtNamaProduct.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                txtNamaProductFocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                txtNamaProductFocusLost(evt);
+            }
+        });
         txtNamaProduct.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtNamaProductActionPerformed(evt);
@@ -137,6 +172,14 @@ public class TambahProduct extends javax.swing.JFrame {
 
         txtHarga.setForeground(new java.awt.Color(153, 153, 153));
         txtHarga.setText("Harga Produk");
+        txtHarga.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                txtHargaFocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                txtHargaFocusLost(evt);
+            }
+        });
         txtHarga.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtHargaActionPerformed(evt);
@@ -145,6 +188,14 @@ public class TambahProduct extends javax.swing.JFrame {
 
         txtStok.setForeground(new java.awt.Color(153, 153, 153));
         txtStok.setText("Stok");
+        txtStok.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                txtStokFocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                txtStokFocusLost(evt);
+            }
+        });
         txtStok.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtStokActionPerformed(evt);
@@ -162,6 +213,14 @@ public class TambahProduct extends javax.swing.JFrame {
 
         txtKategori.setForeground(new java.awt.Color(153, 153, 153));
         txtKategori.setText("Masukkan Kategori Barang");
+        txtKategori.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                txtKategoriFocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                txtKategoriFocusLost(evt);
+            }
+        });
         txtKategori.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtKategoriActionPerformed(evt);
@@ -176,6 +235,14 @@ public class TambahProduct extends javax.swing.JFrame {
         txtDeskripsi.setForeground(new java.awt.Color(153, 153, 153));
         txtDeskripsi.setHorizontalAlignment(javax.swing.JTextField.LEFT);
         txtDeskripsi.setText("Masukkan deskripsi produk");
+        txtDeskripsi.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                txtDeskripsiFocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                txtDeskripsiFocusLost(evt);
+            }
+        });
 
         javax.swing.GroupLayout fPanelProduct3Layout = new javax.swing.GroupLayout(fPanelProduct3);
         fPanelProduct3.setLayout(fPanelProduct3Layout);
@@ -185,7 +252,7 @@ public class TambahProduct extends javax.swing.JFrame {
         );
         fPanelProduct3Layout.setVerticalGroup(
             fPanelProduct3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(txtDeskripsi, javax.swing.GroupLayout.DEFAULT_SIZE, 99, Short.MAX_VALUE)
+            .addComponent(txtDeskripsi, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         labelFoto.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -199,13 +266,17 @@ public class TambahProduct extends javax.swing.JFrame {
         });
 
         fPanel1.setBackground(new java.awt.Color(251, 206, 49));
+        fPanel1.setRoundBottomLeft(10);
+        fPanel1.setRoundBottomRight(10);
+        fPanel1.setRoundTopLeft(10);
+        fPanel1.setRoundTopRight(10);
 
-        jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel8.setText("Konfirmasi");
-        jLabel8.addMouseListener(new java.awt.event.MouseAdapter() {
+        labelKonfirmasi.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        labelKonfirmasi.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelKonfirmasi.setText("Konfirmasi");
+        labelKonfirmasi.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel8MouseClicked(evt);
+                labelKonfirmasiMouseClicked(evt);
             }
         });
 
@@ -213,11 +284,11 @@ public class TambahProduct extends javax.swing.JFrame {
         fPanel1.setLayout(fPanel1Layout);
         fPanel1Layout.setHorizontalGroup(
             fPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, 164, Short.MAX_VALUE)
+            .addComponent(labelKonfirmasi, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 142, Short.MAX_VALUE)
         );
         fPanel1Layout.setVerticalGroup(
             fPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE)
+            .addComponent(labelKonfirmasi, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -227,31 +298,33 @@ public class TambahProduct extends javax.swing.JFrame {
             .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(jPanel1Layout.createSequentialGroup()
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(jPanel1Layout.createSequentialGroup()
-                                    .addGap(69, 69, 69)
-                                    .addComponent(labelFoto, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGroup(jPanel1Layout.createSequentialGroup()
-                                    .addGap(80, 80, 80)
-                                    .addComponent(jLabel7)))
-                            .addGap(229, 229, 229)
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(txtNamaProduct)
-                                .addGroup(jPanel1Layout.createSequentialGroup()
-                                    .addComponent(jLabel3)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(txtHarga, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGroup(jPanel1Layout.createSequentialGroup()
-                                    .addComponent(jLabel5)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(txtStok, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addComponent(jLabel6)
-                                .addComponent(txtKategori, javax.swing.GroupLayout.DEFAULT_SIZE, 403, Short.MAX_VALUE)))
-                        .addGroup(jPanel1Layout.createSequentialGroup()
-                            .addGap(57, 57, 57)
-                            .addComponent(fPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addGap(69, 69, 69)
+                                        .addComponent(labelFoto, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addGap(80, 80, 80)
+                                        .addComponent(jLabel7)))
+                                .addGap(229, 229, 229)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(txtNamaProduct)
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addComponent(jLabel3)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(txtHarga, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addComponent(jLabel5)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(txtStok, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(jLabel6)
+                                    .addComponent(txtKategori, javax.swing.GroupLayout.DEFAULT_SIZE, 403, Short.MAX_VALUE)))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(57, 57, 57)
+                                .addComponent(fPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addContainerGap(80, Short.MAX_VALUE)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -286,11 +359,11 @@ public class TambahProduct extends javax.swing.JFrame {
                         .addComponent(jLabel6)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(txtKategori, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(28, 28, 28)
-                .addComponent(fPanelProduct3, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(fPanelProduct3, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(fPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(614, Short.MAX_VALUE))
+                .addContainerGap(652, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -329,7 +402,7 @@ public class TambahProduct extends javax.swing.JFrame {
 
     private void labelFotoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelFotoMouseClicked
         product p = new product();
-        if (p.nama.equals("") ||  p.kategori.equals("") || p.deskripsi.equals("") || p.harga.equals("") || p.stok.equals("") || p.toko .equals("")){
+        if (p.nama.equals("Nama Produk") ||  p.kategori.equals("Masukkan Kategori Barang") || p.deskripsi.equals("Masukkan deskripsi produk") || p.harga.equals("Harga Produk") || p.stok.equals("Stok") || p.toko .equals("")){
             JOptionPane.showMessageDialog(null, "Harap isi semua sebelum menambahkan foto");
         }else{
             
@@ -364,7 +437,7 @@ public class TambahProduct extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_labelFotoMouseClicked
 
-    private void jLabel8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel8MouseClicked
+    private void labelKonfirmasiMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelKonfirmasiMouseClicked
         try {
             String newpath = "src////produk";
             File directory = new File(newpath);
@@ -382,7 +455,11 @@ public class TambahProduct extends javax.swing.JFrame {
             int harga = Integer.parseInt(p.harga);
             int stok = Integer.parseInt(p.stok);
             st = cn.createStatement();
-            String sql = "INSERT INTO product (nama,harga,stok,kategori,deskripsi,foto,toko) VALUES ('"+p.nama+
+            if (p.nama.equals("Nama Produk") || p.harga.equals("Harga Produk") || p.stok.equals("Stok") || p.kategori.equals("Masukkan Kategori Barang") || 
+                    p.deskripsi.equals("Masukkan deskripsi produk") || fileAkhir.equals("")){
+                JOptionPane.showMessageDialog(null, "Data tidak boleh kosong","Validasi Data",JOptionPane.ERROR_MESSAGE);
+            }else{
+                String sql = "INSERT INTO product (nama,harga,stok,kategori,deskripsi,foto,toko) VALUES ('"+p.nama+
                             "','"+harga+
                             "','"+stok+
                             "','"+p.kategori+
@@ -390,16 +467,107 @@ public class TambahProduct extends javax.swing.JFrame {
                             "','"+fileAkhir+
                             "','"+p.toko+"')";
                         st.executeUpdate(sql);
-            JOptionPane.showMessageDialog(null,"Produk berhasil ditambahkan");
-            Files.copy(fileAwal.toPath(), fileAkhir.toPath());
+                JOptionPane.showMessageDialog(null,"Produk berhasil ditambahkan");
+                Files.copy(fileAwal.toPath(), fileAkhir.toPath());
+
+                this.dispose();
+                HomePageSeller hp = new HomePageSeller();
+                hp.setVisible(true);
+            }
             
-            this.dispose();
-            HomePageSeller hp = new HomePageSeller();
-            hp.setVisible(true);
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, e.getMessage());
         }
-    }//GEN-LAST:event_jLabel8MouseClicked
+    }//GEN-LAST:event_labelKonfirmasiMouseClicked
+
+    private void txtNamaProductFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtNamaProductFocusGained
+        if(txtNamaProduct.getText().equals("Nama Produk")){
+            txtNamaProduct.setText(null);
+            txtNamaProduct.requestFocus();
+            //remove placeholder
+            removePlaceholderStyle(txtNamaProduct);
+        }
+    }//GEN-LAST:event_txtNamaProductFocusGained
+
+    private void txtNamaProductFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtNamaProductFocusLost
+        if(txtNamaProduct.getText().length()==0){
+            //add placeholder
+            addPlaceholderStyle(txtNamaProduct);
+            txtNamaProduct.setText("Nama Produk");
+        }
+    }//GEN-LAST:event_txtNamaProductFocusLost
+
+    private void formWindowGainedFocus(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowGainedFocus
+        this.requestFocusInWindow();
+    }//GEN-LAST:event_formWindowGainedFocus
+
+    private void txtHargaFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtHargaFocusGained
+        if(txtHarga.getText().equals("Harga Produk")){
+            txtHarga.setText(null);
+            txtHarga.requestFocus();
+            //remove placeholder
+            removePlaceholderStyle(txtHarga);
+        }
+    }//GEN-LAST:event_txtHargaFocusGained
+
+    private void txtHargaFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtHargaFocusLost
+        if(txtHarga.getText().length()==0){
+            //add placeholder
+            addPlaceholderStyle(txtHarga);
+            txtHarga.setText("Harga Produk");
+        }
+    }//GEN-LAST:event_txtHargaFocusLost
+
+    private void txtStokFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtStokFocusGained
+        if(txtStok.getText().equals("Stok")){
+            txtStok.setText(null);
+            txtStok.requestFocus();
+            //remove placeholder
+            removePlaceholderStyle(txtStok);
+        }
+    }//GEN-LAST:event_txtStokFocusGained
+
+    private void txtStokFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtStokFocusLost
+        if(txtStok.getText().length()==0){
+            //add placeholder
+            addPlaceholderStyle(txtStok);
+            txtStok.setText("Stok");
+        }
+    }//GEN-LAST:event_txtStokFocusLost
+
+    private void txtKategoriFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtKategoriFocusGained
+        if(txtKategori.getText().equals("Masukkan Kategori Barang")){
+            txtKategori.setText(null);
+            txtKategori.requestFocus();
+            //remove placeholder
+            removePlaceholderStyle(txtKategori);
+        }
+    }//GEN-LAST:event_txtKategoriFocusGained
+
+    private void txtKategoriFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtKategoriFocusLost
+        if(txtKategori.getText().length()==0){
+            //add placeholder
+            addPlaceholderStyle(txtKategori);
+            txtKategori.setText("Masukkan Kategori Barang");
+        }
+    }//GEN-LAST:event_txtKategoriFocusLost
+
+    private void txtDeskripsiFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtDeskripsiFocusGained
+        if(txtDeskripsi.getText().equals("Masukkan deskripsi produk")){
+            txtDeskripsi.setText(null);
+            txtDeskripsi.requestFocus();
+            //remove placeholder
+            removePlaceholderStyle(txtDeskripsi);
+        }
+    }//GEN-LAST:event_txtDeskripsiFocusGained
+
+    private void txtDeskripsiFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtDeskripsiFocusLost
+        if(txtDeskripsi.getText().length()==0){
+            //add placeholder
+            addPlaceholderStyle(txtDeskripsi);
+            txtDeskripsi.setText("Masukkan deskripsi produk");
+        }
+    }//GEN-LAST:event_txtDeskripsiFocusLost
     
     private ImageIcon resizeImage(ImageIcon img){
         return new ImageIcon(img.getImage().getScaledInstance(labelFoto.getWidth()-2, labelFoto.getHeight()-2,Image.SCALE_SMOOTH));
@@ -449,10 +617,10 @@ public class TambahProduct extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JLabel labelFoto;
+    private javax.swing.JLabel labelKonfirmasi;
     private desain.FtxtField txtDeskripsi;
     private javax.swing.JTextField txtHarga;
     private javax.swing.JTextField txtKategori;

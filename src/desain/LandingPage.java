@@ -92,7 +92,8 @@ public class LandingPage extends javax.swing.JFrame {
         );
 
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/landingPage.jpg"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/LandingPageImg.jpg"))); // NOI18N
+        jLabel1.setMinimumSize(new java.awt.Dimension(300, 200));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);

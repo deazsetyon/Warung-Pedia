@@ -336,7 +336,7 @@ public class Register extends javax.swing.JFrame {
             
             
             st = cn.createStatement();
-            if (txtEmail.getText().equals("") || txtNo.getText().equals("") || txtPassword.getText().equals("") || txtRePassword.getText().equals("")){
+            if (txtEmail.getText().equals("Email") || txtNo.getText().equals("No HP") || txtPassword.getText().equals("Password") || txtRePassword.getText().equals("Re-Password")){
                 JOptionPane.showMessageDialog(null, "Data tidak boleh kosong","Validasi Data",JOptionPane.ERROR_MESSAGE);
                 return;
             }else{
